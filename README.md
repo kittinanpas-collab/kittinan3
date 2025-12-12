@@ -1,1 +1,272 @@
 # kittinan3
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <img src="c:\Users\kitti\Downloads\kittinan.png" alt="" sizes="20" srcset="30">
+    <title> ยินดีตอนรับ Portfolio - กิตตินันท์ โอภาส</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sarabun', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a0000 0%, #4a0000 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(255, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+        }
+
+        h2 {
+            color: #ff4444;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ff0000;
+            padding-bottom: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            background: rgba(255, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #ff0000;
+        }
+
+        .info-label {
+            color: #ff6666;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin-top: 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #ff0000, #cc0000);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ff0000;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .timeline-school {
+            font-size: 1.2em;
+            color: #ff4444;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .timeline-period {
+            color: #ffaaaa;
+            font-size: 0.9em;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .achievement-card {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .achievement-card:hover {
+            transform: scale(1.05);
+        }
+
+        .achievement-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ยินดีตอนรับ เข้า Portfolio กิตตินันท์ โอภาส </h1>
+            <p class="subtitle"></p>
+        </header>
+
+        <div class="section">
+            <h2>ข้อมูลส่วนตัว</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">ชื่อ-นามสกุล</div>
+                    <div>กิตตินันท์ โอภาส</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">วันเกิด</div>
+                    <div>26 มกราคม พ.ศ. 2550</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">เบอร์โทรศัพท์</div>
+                    <div>065-025-4301</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>ประวัติการศึกษา</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-school">โรงเรียนบ้านเขาหัวนา</div>
+                    <div class="timeline-period">อนุบาล - ประถมศึกษาปีที่ 3</div>
+                    <p style="margin-top: 10px;">โรงเรียนแห่งแรกที่เริ่มต้นการศึกษา เรียนตั้งแต่ระดับอนุบาลจนถึงประถมศึกษาปีที่ 3</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-school">โรงเรียนอนุบาลวิหารแดง</div>
+                    <div class="timeline-period">จังหวัดสระบุรี อำเภอวิหารแดง</div>
+                    <p style="margin-top: 10px;">ย้ายมาศึกษาต่อที่จังหวัดสระบุรี เรียนต่อในระดับประถมศึกษา</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-school">โรงเรียนปิยชาติพัฒนา</div>
+                    <div class="timeline-period">มัธยมศึกษาปีที่ 1 - 6</div>
+                    <p style="margin-top: 10px;">ศึกษาต่อระดับมัธยมศึกษาจนจบการศึกษาชั้นมัธยมศึกษาปีที่ 6</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>ผลงานและตำแหน่ง</h2>
+            <div class="achievements">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎓</div>
+                    <h3>ประธานนักเรียน</h3>
+                    <p>ตำแหน่งความเป็นผู้นำในโรงเรียน</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">👥</div>
+                    <h3>หัวหน้าห้อง</h3>
+                    <p>ผู้นำและดูแลห้องเรียน</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">⚜️</div>
+                    <h3>คนคุ้มลูกเสือ</h3>
+                    <p>กิจกรรมลูกเสือและอาสาสมัคร</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 กิตตินันท์ โอภาส - Portfolio</p>
+            <p style="margin-top: 10px; opacity: 0.8;">ติดต่อ: 065-025-4301</p>
+        </footer>
+    </div>
+</body>
+</html>
